@@ -12,10 +12,9 @@ void writeUrl(void)
     getstr(url, SIZE_MED);
 	urlLen = strlen(url);
 	if (urlLen == 0) {
-		strcpy(url, "https://ody.ink");
+		strcpy(url, "https://ody.ink/odydata");
 		urlLen = strlen(url);
 	}
-	// BUG! [strlen(url) > sizeof(url) - 2]
 	if (url[urlLen - 1] == '/')
 		url[urlLen - 1] = '\0';
 	fnewout("./odydata/website.ini", url);
