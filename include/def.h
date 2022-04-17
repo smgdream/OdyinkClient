@@ -52,6 +52,7 @@ void docIndex(void);
 	int search(char *keyword);
 	int backDoc(int id);
 	int nextDoc(int id);
+	void cleanData(void);
 //
 
 // Process
