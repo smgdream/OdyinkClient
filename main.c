@@ -17,9 +17,11 @@ int main()
 		install();
 	clear();
 
+	printf("Getting data...\n");
 	if (!getData(getUrl("./odydata/website.ini")))
 		docIndex();
 	else {
+		clear();
 		printf("Network error!\n");
 		genSleep(2);
 	}
