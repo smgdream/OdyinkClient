@@ -7,6 +7,7 @@ fm/fileio.c \
 fm/viewIndex.c \
 fm/switchDoc.c \
 fm/getin.c \
+fm/cleanData.c \
 fm/readType.c \
 fm/getcUTF8.c \
 fm/searchItem.c \

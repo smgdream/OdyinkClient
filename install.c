@@ -8,6 +8,7 @@ void install(void)
 	// Install Odyink Client
 	printf("Enter to start installation\n");
 	getchr();
+	clear();
 	printf("Instailling Odyink Client...\n");
 	// Make dir odydata
 	if (OSNUM)

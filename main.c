@@ -5,7 +5,7 @@
 
 // Odyink Client
 // v0.5-pre1
-// 2022-04-16 (UTC+8)
+// 2022-04-17 (UTC+8)
 
 int main()
 {
@@ -24,12 +24,7 @@ int main()
 		genSleep(2);
 	}
 
-	if (fexist("./odydata/docindex.ini"))
-		remove("./odydata/docindex.ini");
-	if (fexist("./odydata/doctype.ini"))
-		remove("./odydata/doctype.ini");
-	if (fexist("./odydata/docnum.ini"))
-		remove("./odydata/docnum.ini");
+	cleanData();
 	if (OSNUM)
 		cmdRestore();
 	clear();
