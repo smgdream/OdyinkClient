@@ -20,5 +20,6 @@ void install(void)
 	writeUrl();
 	printf("\nFinish\n");
 	genSleep(2);
+	clear();
 	return;
 }

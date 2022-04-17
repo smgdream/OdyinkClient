@@ -3,8 +3,13 @@
 
 void changeWebsite(void)
 {
+	clear();
 	printf("website:");
 	writeUrl();
-	getData(getUrl("./odydata/website.ini"));
+	if (getData(getUrl("./odydata/website.ini"))) {
+		clear();
+		printf("Network error!\n");
+		genSleep(2);
+	}
 	return;
 }
