@@ -18,12 +18,16 @@ void docIndex(void)
 		}
 		findSign = 0;
 		//
-		printf("\n[O]ptions  [S]earch  [E]xit\n");
+		printf("\n[R]efresh            [S]earch\n");
+		printf(  "[O]ptions            [E]xit\n");
 		printf("\n");
 		printf("ID:");
 		getstr(docIp, ID_LEN);
 		if (!isdigit(docIp[0])) {
 			switch (toupper(docIp[0])) {
+				case 'R' :
+					getData(getUrl("./odydata/website.ini"));
+					break;
 				case 'O':
 					options();
 					break;
