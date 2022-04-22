@@ -4,7 +4,7 @@
 //#include "include/debug.h"
 
 // Odyink Client
-// v0.5-pre1
+// v0.5.0.1-Dev
 // 2022-04-17 (UTC+8)
 
 int main()

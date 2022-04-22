@@ -3,7 +3,6 @@
 
 void cleanData(void)
 {
-	genSleep(1);
 	if (fexist("./odydata/docindex.ini"))
 		remove("./odydata/docindex.ini");
 	if (fexist("./odydata/doctype.ini"))
