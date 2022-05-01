@@ -4,12 +4,12 @@
 
 const char *getUrl(const char *fpath)
 {
-    static char tmpstr[SIZE_MED];
-    FILE *fp = NULL;
-    fp = fopen(fpath, "r");
+	static char tmpstr[SIZE_MED];
+	FILE *fp = NULL;
+	fp = fopen(fpath, "r");
 
-    fgets(tmpstr, SIZE_MED, fp);
-    if (fp != NULL)
-        fclose(fp);
-    return tmpstr;
+	fgets(tmpstr, SIZE_MED, fp);
+	if (fp != NULL)
+		fclose(fp);
+	return tmpstr;
 }

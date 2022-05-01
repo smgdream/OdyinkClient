@@ -5,11 +5,11 @@
 
 void writeUrl(void)
 {
-    unsigned int urlLen = 0;
+	unsigned int urlLen = 0;
 	char url[SIZE_MED];
 	arrclean(url, SIZE_MED);
 
-    getstr(url, SIZE_MED);
+	getstr(url, SIZE_MED);
 	urlLen = strlen(url);
 	if (urlLen == 0) {
 		strcpy(url, "https://ody.ink/odydata");
@@ -18,5 +18,5 @@ void writeUrl(void)
 	if (url[urlLen - 1] == '/')
 		url[urlLen - 1] = '\0';
 	fnewout("./odydata/website.ini", url);
-    return;
+	return;
 }

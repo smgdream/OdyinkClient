@@ -5,7 +5,7 @@
 
 // Odyink Client
 // v0.5.0.1-Dev
-// 2022-04-17 (UTC+8)
+// 2022-04-23 (UTC+8)
 
 int main()
 {
@@ -17,14 +17,8 @@ int main()
 		install();
 	clear();
 
-	printf("Getting data...\n");
 	if (!getData(getUrl("./odydata/website.ini")))
 		docIndex();
-	else {
-		clear();
-		printf("Network error!\n");
-		genSleep(2);
-	}
 
 	cleanData();
 	if (OSNUM)
